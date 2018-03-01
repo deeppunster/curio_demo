@@ -95,6 +95,7 @@ async def kid():
             total = 0
             for fib_nbr in range(50):
                 total += await curio.run_in_process(fib, fib_nbr)
+                print(f'Total so far is {total} for {fib_nbr}')
             await curio.sleep(1000)
         except curio.CancelledError as xcp:
             print('Fine. Saving my work.')

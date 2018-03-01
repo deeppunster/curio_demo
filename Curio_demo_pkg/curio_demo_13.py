@@ -98,6 +98,7 @@ async def kid():
             total = 0
             for fib_nbr in range(50):
                 total += await curio.run_in_process(fib, fib_nbr)
+                print(f'Total so far is {total} for {fib_nbr}')
                 # rest a bit
                 await curio.run_in_thread(time.sleep, fib_nbr)
             await curio.sleep(1000)
