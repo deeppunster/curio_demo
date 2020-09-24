@@ -33,6 +33,13 @@ MANIFEST
 *.manifest
 *.spec
 
+# project specific exclusions
+venv/
+.idea/
+!work/Curio Presentation.pdf
+!work/debug_info.yaml
+work/
+
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
