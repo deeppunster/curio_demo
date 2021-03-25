@@ -3,5 +3,5 @@ curio==1.4
 cyhunspell==2.0.1
 future==0.18.2
 psutil==5.7.2
-PyYAML==5.3.1
+PyYAML==5.4
 six==1.15.0
